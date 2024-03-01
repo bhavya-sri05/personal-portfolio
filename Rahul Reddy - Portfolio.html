@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/portfolio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Reddy - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #c9e6ec;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+        p {
+            margin-top: 0;
+        }
+        .portfolio-item {
+            background-color: #f6fafb;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(133, 125, 133);">
+
+<header>
+    <h1 style="color: #333;">Rahul Reddy</h1>
+    <p style="color: #333;">Frontend Developer</p>
+</header>
+
+<div class="container">
+    <div class="portfolio-item">
+        <h2>Project 1: Responsive Website</h2>
+        <img src="./Rahul Reddy - Portfolio_files/responsive design.jpg" alt="responsive design">
+        <p>This project involved designing and developing a responsive website for a local business. Utilizing HTML, CSS, and JavaScript, the site adapts seamlessly to various screen sizes, providing an optimal viewing experience across devices.</p>
+    </div>
+    
+    <div class="portfolio-item">
+        <h2>Project 2: E-commerce Platform</h2>
+        <img src="./Rahul Reddy - Portfolio_files/ecommerce.jpg" alt="ecommerce">
+        <p>For this project, I collaborated with a team to create an e-commerce platform from scratch. My responsibilities included frontend development, implementing product listings, shopping cart functionality, and integrating secure payment gateways.</p>
+    </div>
+    
+    <div class="portfolio-item">
+        <h2>Project 3: Portfolio Website</h2>
+        <img src="./Rahul Reddy - Portfolio_files/portfolio.png" alt="Portfolio">
+        <p>The creation of this very portfolio website demonstrates my skills in frontend development and design. By leveraging HTML, CSS, and a touch of JavaScript, I crafted a sleek and professional online presence to showcase my work and skills.</p>
+    </div>
+
+    <div class="portfolio-item">
+        <h2>Project 4: Web Application</h2>
+        <img src="./Rahul Reddy - Portfolio_files/web application.png" alt="web application">
+        <p>I spearheaded the development of a web application aimed at streamlining project management tasks. Using React.js for the frontend and Node.js for the backend, I engineered a user-friendly interface with features such as task tracking, file sharing, and real-time updates.</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 Rahul Reddy - Portfolio. All rights reserved.</p>
+</footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
